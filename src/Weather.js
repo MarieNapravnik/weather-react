@@ -59,8 +59,8 @@ function search() {
             <div className="col-3">
               <input
                 type="submit"
-                value="Search"
-                className="btn btn-primary w-100"
+                value="Find"
+                className="btn btn-primary w-70"
               />
             </div>
           </div>
