@@ -3,13 +3,13 @@ import Weather from "./Weather";
 import './App.css';
 
 export default function App() {
-  return <div className="App">
+  return (
+  <div className="App">
     <div className="container">
-   <h1> My weather app in react </h1>
-<Weather defaultCity="Brussels"/>
+      <Weather defaultCity="Brussels"/>
 
     <footer>
-      Coded by Marie Nápravníková and is
+      Coded by Marie Nápravníková /
       <a href="https://github.com/MarieNapravnik/weather-react"
       rel="noreferrer"
       target="_blank"> open-sourced on GitHub 
@@ -22,8 +22,9 @@ export default function App() {
           >
             hosted on Netlify
           </a>
-    </footer>
+        </footer>
+      </div>
     </div>
-    </div>;
+  );
 }
 
