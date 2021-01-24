@@ -3,6 +3,7 @@
   border: 1px solid #dadde1;
   padding: 16px;
   border-radius: 10px;
+  color: white;
 }
 
 .Weather form {
@@ -13,6 +14,7 @@
   display: inline-block;
   position: relative;
   right: 40px;
+  color: white;
 }
 
 .Weather h1 {
@@ -21,11 +23,13 @@
   margin: 20px 0 0 0;
   line-height: 29px;
   font-weight: bold;
+  color: white;
 }
 
 .Weather ul {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 .Weather li {
@@ -33,11 +37,12 @@
   font-weight: 100;
   line-height: 19px;
   list-style: none;
+  color: white;
 }
 
 .Weather .temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
+  color: white;
   font-size: 63px;
   line-height: 62px;
   margin-left: 5px;
@@ -50,7 +55,7 @@
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
+  color: white;
   font-size: 16px;
   font-weight: 400;
   position: relative;
