@@ -10,12 +10,14 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      sunrise: response.data.sys.sunrise,
-      sunset: response.data.sys.sunset,
+      feelsLike: response.data.main.feels_like,
+      sunrise: response.data.sys.sunrise + response.data.timezone,
+      sunset: response.data.sys.sunset + response.data.timezone,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
@@ -40,7 +42,7 @@ function search() {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  
+
 
   if (weatherData.ready) {
     return (
