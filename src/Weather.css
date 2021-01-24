@@ -3,7 +3,16 @@
   border: 1px solid #dadde1;
   padding: 16px;
   border-radius: 10px;
-  color: rgb(135, 135, 135);
+}
+
+.Weather form {
+  padding: 10px 30px 1px 0px;
+}
+
+.Weather .searchIcon {
+  display: inline-block;
+  position: relative;
+  right: 40px;
 }
 
 .Weather h1 {
@@ -11,6 +20,7 @@
   font-weight: 100;
   margin: 20px 0 0 0;
   line-height: 29px;
+  font-weight: bold;
 }
 
 .Weather ul {

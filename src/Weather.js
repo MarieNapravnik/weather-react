@@ -4,7 +4,6 @@ import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
-
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -42,7 +41,14 @@ function search() {
     axios.get(apiUrl).then(handleResponse);
   }
 
+ // function searchCurrentLocation(position) {
+   // let apiKey = "27b4bb30993897eb41fd3193d860c853";
+    //let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+   // axios.get(apiUrl).then(handleResponse); }
 
+ // function handleCurrentLocation(event){
+  //  event.preventDefault();
+  //  navigator.geolocation.getCurrentPosition(searchCurrentLocation);  }
 
   if (weatherData.ready) {
     return (
@@ -64,6 +70,9 @@ function search() {
                 value="Find"
                 className="btn btn-primary w-70"
               />
+              <div className="col-1">
+           
+          </div>
             </div>
           </div>
         </form>
